@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudDrive™ — Download de Armazenamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="brand">
+      <div class="logo" aria-hidden="true">＋</div>
+      <span>CloudDrive™ · Tecnologia 100% duvidosa</span>
+    </header>
+
+    <section class="panel">
+      <p class="eyebrow">Upgrade revolucionário</p>
+      <h1>Baixe mais armazenamento para o seu PC.</h1>
+      <p class="intro">
+        Seu SSD está cheio? Não compre outro. Basta baixar alguns gigabytes
+        diretamente pela internet. A engenharia pediu demissão, mas a tecnologia não para. 🚀
+      </p>
+
+      <div class="storage-card">
+        <div class="drive-icon" aria-hidden="true">💾</div>
+        <div>
+          <strong>Plano Vitalício — 1 TB extra</strong>
+          <small>Pagamento: sua confiança · Renovação: nunca</small>
+        </div>
+      </div>
+
+      <button id="startButton" type="button">
+        ⬇️ BAIXAR 1 TB DE ARMAZENAMENTO
+      </button>
+
+      <section class="progress-area" id="progressArea" aria-live="polite" hidden>
+        <div class="progress-heading">
+          <strong id="progressLabel">Preparando espaço no espaço...</strong>
+          <span id="percent">0%</span>
+        </div>
+
+        <div
+          class="progress-track"
+          id="progressTrack"
+          role="progressbar"
+          aria-label="Download fictício de armazenamento"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+        >
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <p class="status" id="status">
+          Conectando ao servidor de discos rígidos imaginários...
+        </p>
+      </section>
+
+      <section class="result" id="result" aria-live="polite" hidden>
+        <span class="pill">✓ DOWNLOAD CONCLUÍDO</span>
+        <h2>Parabéns! Seu armazenamento foi atualizado.</h2>
+        <p class="big">+1 TB</p>
+        <p>
+          O plano vitalício foi ativado com sucesso! Seu PC agora tem exatamente
+          a mesma quantidade de armazenamento físico de antes. 😎
+        </p>
+        <p>
+          <strong>Mentira, obviamente.</strong> 😂 Nenhum arquivo foi baixado e
+          nada no computador foi alterado. Era só uma pegadinha.
+        </p>
+        <button class="secondary-button" id="againButton" type="button">
+          Fazer download de mais 1 TB (de novo)
+        </button>
+      </section>
+
+      <footer>
+        * Serviço fictício para fins de humor. Não aumenta o espaço do disco,
+        não instala nada e não coleta dados. Milagre tecnológico ainda em beta.
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
